@@ -42,7 +42,7 @@ button{
 }
 
 .sub-heading{
-    padding: 35px;
+    padding-top: 120px;
     color: var(--navyblue);
     text-align: center;
     font-family: inherit;
@@ -53,10 +53,8 @@ button{
 }
 
 .main-header{
-    /*width: 1440px;
-    height: 72px; */
     display: flex;
-    width: 1440px;
+    /*width: 1440px;*/
     height: 72px;
     justify-content: center;
     align-items: center;
@@ -65,18 +63,11 @@ button{
     background: var(--white);
 }
 
-.header-nav{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .nav-logo{
     display: inline-flex;
     height: 24px;
     align-items: center;
     flex-shrink: 0;
-    margin: 24px 1169px 24px 156px;
     color: var(--navyblue);
     font-family: 'Raleway';
     font-size: 18px;
@@ -84,6 +75,7 @@ button{
     line-height: 1.1em;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-left: 156px;
 }
 
 .iris{
@@ -91,18 +83,18 @@ button{
     font-family: 'Raleway';
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.1em;
+    line-height: 1.16em;
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
 
-.nav-list-item{
+.nav-list{
     list-style-type: none;
     display: inline-flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 40px;
-    margin: 24px 832px 24px 347px;
+    margin: 0px 332px 0px 76px;
 }
 
 .nav-list-item-link{
@@ -114,32 +106,24 @@ button{
     letter-spacing: 0.32px;
 }
 
-.nav-list-item{ 
-}
-
 .nav-list-item-link:hover,
 .nav-list-item-link:focus {
     color: var(--ocean);
     border-bottom: 2px solid var(--ocean);
 }
 
-.address {
-    overflow: hidden;
-    margin-right: 90px;
-    text-align: center;
-}
-
-.address-item{
-    float: right;
+.address-list{
     list-style-type: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    margin-right: 156px;
 }
 
 .address-item-link{
-    display: block;
-    padding: 18px 20px;
-    text-align: center;
     color: var(--slate);
-    font-family: Roboto;
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.32px;
@@ -153,37 +137,31 @@ button{
 
 .hero{
     background-color: var(--navybluemodal);
-    height: 650px;
-    margin: 0;
+    height: 600px;
+    flex-shrink: 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
 .hero-heading{
-    width: 496px;
     color: var(--white);
     text-align: center;
     font-family:inherit;
     font-size: 56px;
     line-height: 1.07em;
     letter-spacing: 1.12px; 
-    margin: 188px 472px 292px 472px;
+    margin: 188px 472px 0px 472px;
 }
 
 .hero-button{ 
-    display: inline-flex;
     padding: 16px 32px;
-    align-items: flex-start;
-    gap: 10px;
-
+    margin: 48px 636px 188px 635px;
     border-radius: 4px;
+    gap: 10px;
     border: none;
     background: var(--iris);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 16px 32px;
-    margin-top: 10em;
-    position: absolute;
     color: var(--white);
     font-family: inherit;
     font-size: 16px;
@@ -199,16 +177,16 @@ button{
 }
 
 .features-list{
-    align-items: center;
-    margin: 80px 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    gap: 8px;
+    margin-top: 120px;
 }
 
 .features-list-item{
-    width: 250px;
-    padding: 30px;
-    display: inline-block;
-    justify-content: center;
-    list-style-type: none;
+    width: 264px;
 }
 
 .feature-heading{
@@ -216,7 +194,7 @@ button{
     font-family: inherit;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 1.2em;
     letter-spacing: 0.4px;
 }
 
@@ -226,43 +204,43 @@ button{
     font-size: 16px;
     line-height: 1.5em; 
     letter-spacing: 0.32px;
-    width: 264px;
-    padding: 10px;
-}
-
-.services{
-    height: 516px;
-    flex-shrink: 0;
 }
 
 .services-list{
-    margin-left: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    gap: 24px;
+    margin-top: 72px;
     margin-bottom: 120px;
-
 }
 
-.services-list-item{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px;
+.services-img{
+    width: 360px;
+    height: 360px;
 }
 
 .team{
     background-color: var(--cloud);
-    padding: 2px 20px;
     height: 732px;
-    flex-shrink: 0;
+}
+
+.team-member-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    gap: 24px;
+    margin-top: 72px;
+    margin-bottom: 120px;
+}
+
+.tcard-content{
+    margin: 32px 16px;
 }
 
 .team-card{
-    margin: 50px 0 80px 25px;
-    display: inline-flex;
-    padding-bottom: 0px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
     border-radius: 0px 0px 4px 4px;
     background: var(--white);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -294,25 +272,18 @@ button{
 
 /*--Portfolio--*/
 .filter-buttons{
-    margin-top: 30px;
-    margin-left: 23%;
-    padding: 10px;
+    margin: 96px 0px  72px 470px;
 }
 
 .filter-buttons-list{
     display: inline-flex;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
     gap: 24px;
 }
 
-.filter-button-item {
-    list-style: none;
-}
-
 .filter-button.active{
-    display: flex;
-    padding: 12px 24px;
-    align-items: flex-start;
     color: var(--white);
     border-radius: 4px;
     border: 1px solid var(--ocean);
@@ -348,34 +319,45 @@ button{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.portfolio-list{
-    list-style-type: none;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px;
-}
-
-.portfolio-card{
+.projects-list{
     display: flex;
-    width: 360px;
-    height: 420px;
     padding-bottom: 0px;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+    list-style-type: none;
     gap: 32px;
     flex-shrink: 0;
-    border: 1px solid var(--cornflower);
-    background: var(--white); 
+    margin: 72px 156px 120px 156px;
+    width: 1128px;
 }
 
-.portfolio-img{
+.project-row{
+    display: flex;
+    flex-direction: row;
+    gap: 40px
+}
+
+.project-card {
+    width: 361px;
+    height: 420px;
+    border: 1px solid var(--cornflower);
+    background: var(--white);
+}
+
+.project-img {
     width: 360px;
     height: 300px;
     flex-shrink: 0;
 }
 
-.portfolio-heading{
+.pcard-content{
+    margin: 32px 16px;
+}
+
+.project-heading{
+    display: flex;
+    flex-direction: column;
     color: var(--navyblue);
     font-family: inherit;
     font-size: 20px;
@@ -384,22 +366,12 @@ button{
     letter-spacing: 0.4px;
 }
 
-.portfolio-type{
+.project-type{
     color: var(--slate);
     font-family: inherit;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.32px;
-}
-
-.portfolio-card-content{
-    display: flex;
-    padding: 0px 16px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
-    align-self: stretch;
 }
 
 /*--End of Portfolio-*/
@@ -415,20 +387,21 @@ button{
 .footer-logo{
     display: inline-flex;
     height: 24px;
-    align-items: center;
     flex-shrink: 0;
+    margin-top: 101.5px;
+    margin-left: 156px;
 }
 
 .footer-description{
     width: 264px;
-    height: 72px;
-    padding: 0 60px;
-    margin: 15px 0 0 50px;
     color: var(--cloud);
     font-family: inherit;
     font-size: 16px;
     line-height: 1.5em; 
     letter-spacing: 0.32px;
+    margin-top: 17.5px;
+    margin-left: 156px;
+
 }
 
 .cloud{
@@ -436,7 +409,7 @@ button{
     font-family: 'Raleway';
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.3em;
+    line-height: 1.16em;
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
