@@ -383,7 +383,6 @@ button {
 .footer {
     background-color: var(--navyblue);
     color: var(--white);
-    flex-shrink: 0;
     padding: 100px 0;
 }
 
@@ -391,12 +390,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 17.5px;
-}
-
-.footer-logo {
-    display: inline-flex;
-    height: 24px;
-    flex-shrink: 0;
 }
 
 .footer-description {
