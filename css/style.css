@@ -168,8 +168,7 @@ button {
     font-weight: 500;
     line-height: 1.5em;
     letter-spacing: 0.64px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .hero-button:hover,
@@ -222,7 +221,7 @@ button {
     justify-content: center;
     list-style-type: none;
     gap: 24px;
-    padding-top: 72px;
+    margin-top: 72px;
 }
 
 .services-img {
@@ -345,8 +344,6 @@ button {
 }
 
 .project-card {
-    width: 361px;
-    height: 420px;
     border: 1px solid var(--cornflower);
     background: var(--white);
 }
